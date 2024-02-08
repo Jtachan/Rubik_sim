@@ -23,8 +23,8 @@ jobs:
           pip install flake8==6.0.* pylint==2.17.* black==23.7.0 isort==5.12.* pytest
       - name: Run linters
         run: |
-          isort --check rubik setup.py unittests
-          black --check rubik setup.py unittests
+          isort --check src unittests
+          black --check src unittests
           pip install .
-          flake8 --tee --format=pylint rubik unittests
-          pylint --rcfile=pylintrc rubik unittests
+          flake8 --tee --format=pylint src unittests
+          pylint --rcfile=pylintrc src unittests

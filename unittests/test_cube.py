@@ -1,7 +1,7 @@
 """Module to test the correct behaviour of the cube"""
 import pytest
 
-from rubik import CubeFace, CubeSection, RubiksCube
+from rubik_sim import CubeFace, CubeSection, RubiksCube
 
 
 def test_initialization():
