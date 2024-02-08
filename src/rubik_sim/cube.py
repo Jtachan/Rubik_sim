@@ -9,7 +9,7 @@ from typing import Literal, Sequence
 
 import numpy as np
 
-from rubik.notations import Color, CubeFace, CubeSection
+from .notations import Color, CubeFace, CubeSection
 
 
 class RubiksCube:
