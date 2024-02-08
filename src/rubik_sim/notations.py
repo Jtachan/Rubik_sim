@@ -3,6 +3,7 @@ This module contains multiple classes that correspond to the correct notation of
 Rubik's cube
 """
 import enum
+from typing import Final
 
 
 class Color(enum.Enum):
@@ -42,7 +43,7 @@ class CubeSection(enum.Enum):
     MIDDLE_YZ = "S"
 
 
-MovesNotation = [
+NOTATION_MOVES: Final[set[str]] = {
     "U",
     "U'",
     "U2",
@@ -70,4 +71,4 @@ MovesNotation = [
     "S",
     "S'",
     "S2",
-]
+}
